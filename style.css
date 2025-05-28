@@ -1,0 +1,36 @@
+body{
+    height: 100vh;
+    background-image: url(https://www.endeavorschools.com/wp-content/uploads/2020/05/tile-bg-scaled.jpg);
+    background-repeat: round;
+}
+
+.center{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.glass-eff{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    --webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 32px;
+}
+
+.glass-size{
+    width: 50%;
+    height: 50%;
+}
+
+h1{
+    text-align: center;
+    margin: 0 20px;
+}
+
+p{
+    text-align: justify;
+    margin: 40px;
+}
