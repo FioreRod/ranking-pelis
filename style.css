@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
 body{
-    height: 100vh;
-    background-image: url(https://www.endeavorschools.com/wp-content/uploads/2020/05/tile-bg-scaled.jpg);
-    background-repeat: round;
+    background-image: url(https://wallpapers.com/images/hd/cute-aesthetic-pc-8-bit-pastel-city-afhdsg5dm28kn3gp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    font-family: 'Quicksand', sans-serif;
+    
 }
 
 .center{
     display: flex;
+    flex-direction: column;
     align-content: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -15,22 +21,80 @@ body{
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     --webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.37);
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 32px;
 }
 
-.glass-size{
-    width: 50%;
-    height: 50%;
+h1, h2{
+    text-align: center;
 }
 
-h1{
+h3{
+    font-weight: 400;
     text-align: center;
-    margin: 0 20px;
 }
 
 p{
     text-align: justify;
-    margin: 40px;
+}
+
+div{
+    padding: 15px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 6px;
+}
+    
+.div1 {
+    background-color: rgba(245, 245, 245, 0.05);
+    grid-column: span 6 / span 6;
+}
+
+.div2 {
+   background-color: rgba(245, 245, 245, 0.05);
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-row-start: 2;
+}
+
+.peli1 {
+   background-color: rgba(245, 245, 245, 0.05);
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.peli2 {
+   background-color: rgba(245, 245, 245, 0.05);
+    grid-row: span 3 / span 3;
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+
+.div7 {
+   background-color: rgba(245, 245, 245, 0.05);
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 5;
+    grid-row-start: 2;
+}
+
+input{
+    background-color: white;
+}
+
+button{
+    background-color: #E5ADC6;
+}
+        
+button, input{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: black;
 }
